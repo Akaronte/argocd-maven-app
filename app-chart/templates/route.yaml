@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ .Chart.Name }}
+spec:
+  host: {{ .Values.route.host }}
+  port:
+    targetPort: {{ .Values.service.targetPort }}
+  to:
+    kind: Service
+    name: {{ .Chart.Name }}
+    weight: 100

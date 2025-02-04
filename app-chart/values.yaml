@@ -1,0 +1,12 @@
+replicaCount: 1
+image:
+  repository: registry.piensoluegoinstalo.com:5000/maven-app:latest
+  tag: latest
+  pullSecret: regcred
+service:
+  port: 8081
+  targetPort: 8081
+route:
+  host: my-app.example.com
+
+regcred: {"auths":{"https://registry.piensoluegoinstalo.com:5000":{"username":"akaronte","password":"mondariz10","email":"akaronte@hotmail.com","auth":"YWthcm9udGU6bW9uZGFyaXoxMA=="}}}
