@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: registry.piensoluegoinstalo.com:5000/maven-app:latest
   tag: latest
-  pullSecret: {{ .Values.image.pullSecret}}
+  pullSecret: regcred
   dockerconfigjson: '{"auths":{"https://registry.piensoluegoinstalo.com:5000":{"username":"akaronte","password":"mondariz10","email":"akaronte@hotmail.com","auth":"YWthcm9udGU6bW9uZGFyaXoxMA=="}}}'
 service:
   port: 8081
