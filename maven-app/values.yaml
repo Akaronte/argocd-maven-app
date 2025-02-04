@@ -8,4 +8,4 @@ service:
   port: 8081
   targetPort: 8081
 route:
-  host: maven-app.apps.kube1.okd.piensoluegoinstalo.com
+  host: host-maven-app.apps.kube1.okd.piensoluegoinstalo.com
