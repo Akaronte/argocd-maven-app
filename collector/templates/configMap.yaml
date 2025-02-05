@@ -13,8 +13,8 @@ data:
             endpoint: 0.0.0.0:4318
 
     exporters:
-      logging:
-        loglevel: debug
+      debug:
+        verbosity: detailed
 
     service:
       pipelines:
