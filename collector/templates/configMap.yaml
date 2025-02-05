@@ -5,7 +5,6 @@ metadata:
 data:
   config.yaml: |
     receivers:
-    receivers:
       otlp:
         protocols:
           grpc:
