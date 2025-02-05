@@ -19,10 +19,7 @@ data:
       pipelines:
         logs:
           receivers: [otlp]
-          exporters: [logging]
         traces:
           receivers: [otlp]
-          exporters: [logging]
         metrics:
           receivers: [otlp]
-          exporters: [logging]
