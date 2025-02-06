@@ -1,0 +1,21 @@
+logging:
+  level:
+    org:
+      springframework:
+        context: DEBUG
+
+spring:
+  application:
+    name: demo
+
+server:
+  port: 8081
+
+app:
+  name: helm-file-mavem-app
+  version: 1.0.0
+  description: "local file config properties"
+
+otel:
+  service:
+    name: helm-file-mavem-app

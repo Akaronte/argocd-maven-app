@@ -13,13 +13,17 @@ data:
             endpoint: 0.0.0.0:4318
 
     exporters:
-      none:
+      debug:
+        verbosity: detailed  # Optional: Set verbosity level (basic, normal, detailed)
 
     service:
       pipelines:
-        logs:
-          receivers: [otlp]
         traces:
           receivers: [otlp]
+          exporters: [debug]
         metrics:
           receivers: [otlp]
+          exporters: [debug]
+        logs:
+          receivers: [otlp]
+          exporters: [debug]

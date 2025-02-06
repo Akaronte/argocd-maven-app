@@ -83,7 +83,7 @@ volumes:
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: 
 - name: otel-config
-  mountPath: "/otel/"
+  mountPath: "/etc/otelcol/"
   readOnly: true
 
 nodeSelector: {}
